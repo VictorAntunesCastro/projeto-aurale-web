@@ -10,11 +10,11 @@ O objetivo principal é profissionalizar a presença digital do negócio, oferec
 
 | Integrante            | Página(s) / Módulo(s)         | Responsabilidade Técnica                                       |
 | :-------------------- | :---------------------------- | :------------------------------------------------------------- |
-| Nome do Integrante 1  | `index.html` e Estrutura      | Navbar responsiva Bootstrap, dropdown, banner, cards e footer  |
-| Nome do Integrante 2  | `salao.html`                  | Galeria de fotos, informações do espaço e botão de orçamento   |
-| Nome do Integrante 3  | `catalogo.html`               | Cards dos produtos e categorias (mesas, cadeiras, decoração)   |
+| Pâmella de Azevedo    | `index.html` e Estrutura      | Navbar responsiva Bootstrap, dropdown, banner, cards e footer  |
+| Kamyle Pontes Lino    | `salao.html`                  | Galeria de fotos, informações do espaço e botão de orçamento   |
+| João Vitor Fonseca    | `catalogo.html`               | Cards dos produtos e categorias (mesas, cadeiras, decoração)   |
 | Victor Antunes Castro | `orcamento.html` e JavaScript | Formulário, validações em JS e cálculo interativo do orçamento |
-| Nome do Integrante 5  | `contato.html` e Acabamento   | Formulário de contato, FAQ (Accordion Bootstrap) e localização |
+| Lucas Paixão de Lima  | `contato.html` e Acabamento   | Formulário de contato, FAQ (Accordion Bootstrap) e localização |
 
 ## Como executar o projeto
 
