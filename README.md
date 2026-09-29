@@ -1,2 +1,27 @@
 # projeto-aurale-web
-Plataforma web responsiva com catálogo e sistema de orçamentos para a Aurale Festas.
+
+## Visão geral
+
+O projeto consiste no desenvolvimento de um site responsivo para a **Aurale**, uma empresa real de locação de itens para festas e eventos (incluindo salão, brinquedos e outros produtos).
+
+O objetivo principal é profissionalizar a presença digital do negócio, oferecendo um catálogo organizado de itens e páginas institucionais. A aplicação conta com navegação responsiva, menu dropdown e um sistema interativo de simulação de orçamento desenvolvido em JavaScript.
+
+## Quem faz o quê
+
+| Integrante            | Página(s) / Módulo(s)         | Responsabilidade Técnica                                       |
+| :-------------------- | :---------------------------- | :------------------------------------------------------------- |
+| Nome do Integrante 1  | `index.html` e Estrutura      | Navbar responsiva Bootstrap, dropdown, banner, cards e footer  |
+| Nome do Integrante 2  | `salao.html`                  | Galeria de fotos, informações do espaço e botão de orçamento   |
+| Nome do Integrante 3  | `catalogo.html`               | Cards dos produtos e categorias (mesas, cadeiras, decoração)   |
+| Victor Antunes Castro | `orcamento.html` e JavaScript | Formulário, validações em JS e cálculo interativo do orçamento |
+| Nome do Integrante 5  | `contato.html` e Acabamento   | Formulário de contato, FAQ (Accordion Bootstrap) e localização |
+
+## Como executar o projeto
+
+Como este projeto utiliza apenas tecnologias web estáticas (HTML, CSS, JavaScript e Bootstrap), a execução é bastante simples.
+
+Para visualizar o projeto localmente:
+
+1. Abra a pasta do projeto no seu editor de código (ex: VS Code).
+2. Dê um duplo clique no arquivo `index.html` para abri-lo diretamente no navegador.
+3. Alternativamente, utilize a extensão **Live Server** no VS Code para visualizar as alterações em tempo real.
