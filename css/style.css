@@ -1,0 +1,104 @@
+/* identidade visual Aurale - cores e fontes do manual de identidade */
+:root {
+  --aurale-azul-escuro: #01326f;
+  --aurale-azul: #1b548d;
+  --aurale-rosa: #ea9da9;
+  --aurale-rosa-claro: #eab2bb;
+  --aurale-amarelo: #eae164;
+  --aurale-creme: #fffcf6;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: var(--aurale-creme);
+  color: var(--aurale-azul-escuro);
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand,
+.logo-aurale {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+a {
+  color: var(--aurale-azul);
+}
+
+/* navbar */
+.navbar-aurale {
+  background-color: var(--aurale-azul-escuro);
+}
+
+.navbar-aurale .navbar-brand,
+.navbar-aurale .nav-link {
+  color: var(--aurale-creme) !important;
+}
+
+.navbar-aurale .nav-link:hover,
+.navbar-aurale .nav-link.active {
+  color: var(--aurale-rosa-claro) !important;
+}
+
+.navbar-aurale .dropdown-menu {
+  background-color: var(--aurale-azul);
+}
+
+.navbar-aurale .dropdown-item {
+  color: var(--aurale-creme);
+}
+
+.navbar-aurale .dropdown-item:hover {
+  background-color: var(--aurale-azul-escuro);
+  color: var(--aurale-rosa-claro);
+}
+
+/* footer */
+.footer-aurale {
+  background-color: var(--aurale-azul-escuro);
+  color: var(--aurale-creme);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-aurale a {
+  color: var(--aurale-rosa-claro);
+}
+
+/* botoes padrao do site */
+.btn-aurale {
+  background-color: var(--aurale-azul);
+  color: var(--aurale-creme);
+  border: none;
+}
+
+.btn-aurale:hover {
+  background-color: var(--aurale-azul-escuro);
+  color: var(--aurale-creme);
+}
+
+/* pagina de contato */
+.contato-hero {
+  background-color: var(--aurale-azul);
+  color: var(--aurale-creme);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--aurale-rosa-claro);
+  color: var(--aurale-azul-escuro);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(27, 84, 141, 0.25);
+}
+
+.mapa-aurale iframe {
+  width: 100%;
+  min-height: 300px;
+  border: 0;
+}
