@@ -1,0 +1,239 @@
+:root {
+    --azul: #01326F;
+    --azul2: #1B548D;
+    --rosa: #EAB2BB;
+    --rosa2: #EA9DA9;
+    --amarelo: #EAE164;
+}
+
+body {
+    color: var(--azul);
+}
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.hero {
+    background: var(--rosa);
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero .eyebrow {
+    font-size: .75rem;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: .6;
+    margin-bottom: .75rem;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 3.75rem);
+    margin-bottom: 1rem;
+}
+
+.hero p.lead {
+    opacity: .7;
+    font-size: 1.125rem;
+}
+
+.sparkle {
+    position: absolute;
+}
+
+.sparkle.a {
+    top: 1.5rem;
+    left: 1.5rem;
+    opacity: .3;
+}
+
+.sparkle.b {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    opacity: .2;
+}
+
+.foto {
+    border-radius: 1rem;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.foto span {
+    color: rgba(255, 255, 255, .85);
+    font-size: .75rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, .2);
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+    backdrop-filter: blur(4px);
+}
+
+.estrutura {
+    background: var(--azul);
+    padding: 4rem 0;
+}
+
+.estrutura h2 {
+    color: #fff;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.feature {
+    display: flex;
+    gap: 1rem;
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    height: 100%;
+}
+
+.feature .ico {
+    font-size: 1.875rem;
+    flex-shrink: 0;
+}
+
+.feature h3 {
+    color: var(--amarelo);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+
+.feature p {
+    color: rgba(255, 255, 255, .6);
+    font-size: .875rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.pacotes h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.pacotes .sub {
+    text-align: center;
+    opacity: .6;
+    margin-bottom: 3rem;
+}
+
+.pacote {
+    background: #fff;
+    border: 2px solid var(--cor);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+}
+
+.pacote .horas {
+    font-size: .75rem;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: .5;
+    margin-bottom: .5rem;
+}
+
+.pacote h3 {
+    font-size: 1.875rem;
+    margin-bottom: .5rem;
+}
+
+.pacote .preco {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.pacote ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.pacote li {
+    font-size: .875rem;
+    opacity: .7;
+    display: flex;
+    gap: .5rem;
+}
+
+.pacote .btn-pacote {
+    margin-top: auto;
+    text-align: center;
+    font-weight: 700;
+    padding: .75rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: .875rem;
+    text-decoration: none;
+    border: 2px solid var(--azul);
+    color: var(--azul);
+    transition: all .2s;
+}
+
+.pacote .btn-pacote:hover {
+    background: var(--azul);
+    color: #fff;
+}
+
+.pacote.destaque {
+    background: var(--azul);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+
+.pacote.destaque .horas {
+    color: #fff;
+    opacity: .7;
+}
+
+.pacote.destaque h3 {
+    color: #fff;
+}
+
+.pacote.destaque .preco {
+    color: var(--amarelo);
+}
+
+.pacote.destaque li {
+    color: #fff;
+    opacity: .8;
+}
+
+.pacote.destaque .btn-pacote {
+    background: #fff;
+    border-color: #fff;
+}
+
+.pacote.destaque .btn-pacote:hover {
+    background: var(--amarelo);
+    border-color: var(--amarelo);
+    color: var(--azul);
+}
+
+@media (min-width:768px) {
+    .pacote.destaque {
+        transform: scale(1.05);
+    }
+}
