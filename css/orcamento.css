@@ -19,49 +19,12 @@ h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", serif;
 }
 
-/* ---------- NAVBAR ---------- */
-.aurale-nav {
-  background: var(--creme);
-  box-shadow: 0 1px 8px rgba(1, 50, 111, 0.08);
-  padding: 0.6rem 0;
+/* ---------- HEADER ----------*/
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
-.aurale-logo {
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  color: var(--azul) !important;
-  font-size: 1.15rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.logo-ball {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--rosa);
-  box-shadow: 0 -5px 0 -3px var(--amarelo);
-}
-.aurale-nav .nav-link {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--azul-escuro);
-}
-.aurale-nav .nav-link:hover { color: var(--rosa-forte); }
-.aurale-nav .nav-link.active { color: var(--rosa-forte); }
-.btn-aurale-dark {
-  background: var(--azul-escuro);
-  color: #fff;
-  border-radius: 50rem;
-  padding: 0.55rem 1.3rem;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.btn-aurale-dark:hover { background: var(--azul); color: #fff; }
 
 /* ---------- HERO ---------- */
 .hero-orcamento {

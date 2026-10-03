@@ -17,55 +17,8 @@
     <link rel="stylesheet" href="css/orcamento.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg aurale-nav sticky-top">
-      <div class="container">
-        <a class="navbar-brand aurale-logo" href="index.html">
-          <span class="logo-ball" aria-hidden="true"></span>AURALE
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-          aria-controls="menu"
-          aria-expanded="false"
-          aria-label="Abrir menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Serviços</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="salao.html">Salão de Festas</a></li>
-                <li><a class="dropdown-item" href="catalogo.html">Catálogo de Itens</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="orcamento.html" aria-current="page">Orçamento</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-            <li class="nav-item ms-lg-2">
-              <a class="btn btn-aurale-dark" href="orcamento.html">Solicitar Orçamento</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- HEADER -->
+    <div id="header"></div>
 
     <!-- HERO -->
     <header class="hero-orcamento text-center">
@@ -167,7 +120,7 @@
           </div>
         </div>
 
-        <!-- SIMULAÇÃO DE VALOR-->
+        <!-- SIMULAÇÃO DE VALOR -->
         <div class="estimativa mt-4">
           <p class="estimativa-titulo">Simulação de valor</p>
           <p class="form-hint mb-3">
@@ -246,6 +199,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/Header.js"></script>
+    <script>criarHeader();</script>
     <script src="js/orcamento.js"></script>
   </body>
 </html>
