@@ -1,0 +1,1 @@
+const salao = document.getElementById("salao");
