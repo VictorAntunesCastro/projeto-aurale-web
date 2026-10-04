@@ -19,7 +19,9 @@
     <div class="contato-hero">
       <div class="container">
         <h1>Fale com a Aurale</h1>
-        <p class="mb-0">Tire suas dúvidas, peça um orçamento ou venha conhecer nosso espaço.</p>
+        <p class="mb-0">
+          Tire suas dúvidas, peça um orçamento ou venha conhecer nosso espaço.
+        </p>
       </div>
     </div>
 
@@ -47,7 +49,9 @@
                 placeholder="(00) 00000-0000"
                 required
               />
-              <div class="invalid-feedback">Informe um telefone para contato.</div>
+              <div class="invalid-feedback">
+                Informe um telefone para contato.
+              </div>
             </div>
             <div class="mb-3">
               <label for="mensagem" class="form-label">Mensagem</label>
@@ -59,7 +63,9 @@
               ></textarea>
               <div class="invalid-feedback">Escreva sua mensagem.</div>
             </div>
-            <button type="submit" class="btn btn-aurale">Enviar mensagem</button>
+            <button type="submit" class="btn btn-aurale">
+              Enviar mensagem
+            </button>
             <div id="mensagem-envio" class="alert alert-success mt-3 d-none">
               Mensagem enviada com sucesso! Em breve entraremos em contato.
             </div>
@@ -103,7 +109,8 @@
             >
               <div class="accordion-body">
                 Recomendamos reservar com pelo menos 15 dias de antecedência,
-                principalmente em datas de alta procura como fins de semana e feriados.
+                principalmente em datas de alta procura como fins de semana e
+                feriados.
               </div>
             </div>
           </div>
@@ -124,9 +131,9 @@
               data-bs-parent="#faqAurale"
             >
               <div class="accordion-body">
-                Cancelamentos feitos com até 7 dias de antecedência têm reembolso
-                integral do valor pago. Após esse prazo, consulte nossas condições
-                diretamente conosco.
+                Cancelamentos feitos com até 7 dias de antecedência têm
+                reembolso integral do valor pago. Após esse prazo, consulte
+                nossas condições diretamente conosco.
               </div>
             </div>
           </div>
@@ -147,8 +154,8 @@
               data-bs-parent="#faqAurale"
             >
               <div class="accordion-body">
-                Sim, fazemos entrega e retirada dos itens alugados na data combinada.
-                O valor do frete varia de acordo com a distância.
+                Sim, fazemos entrega e retirada dos itens alugados na data
+                combinada. O valor do frete varia de acordo com a distância.
               </div>
             </div>
           </div>
@@ -178,20 +185,20 @@
       </section>
     </main>
 
-    <footer class="footer-aurale">
-      <div class="container text-center">
-        <p class="mb-1">AURALE - Locação de itens para festas e eventos</p>
-        <p class="mb-0">
-          <a href="contato.html">Contato</a> ·
-          <a href="catalogo.html">Catálogo</a> ·
-          <a href="salao.html">Salão de Festas</a>
-        </p>
-      </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/contato.js"></script>
+
     <script src="js/Header.js"></script>
-    <script>criarHeader();</script>
+    <script>
+      criarHeader();
+    </script>
+
+    <script src="js/Footer.js"></script>
+    <script>
+      criarFooter();
+    </script>
   </body>
 </html>
