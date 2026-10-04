@@ -56,8 +56,16 @@
 
 .hero-ilustracao {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.hero-grafismo {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin-right: -40px;
 }
 
 @media (max-width: 767px) {
@@ -86,6 +94,12 @@
 
   .hero-ilustracao {
     margin-top: 40px;
+    justify-content: center;
+  }
+
+  .hero-grafismo {
+    max-width: 300px;
+    margin-right: 0;
   }
 }
 .numeros {
@@ -142,10 +156,9 @@
   background-color: white;
   border: 1px solid rgba(234, 178, 187, 0.35);
   border-radius: 12px;
-
   padding: 25px;
-
   height: 100%;
+  transition: transform 0.2s ease;
 }
 
 .servico-icone {
@@ -173,10 +186,6 @@
   font-size: 0.7rem;
   font-weight: 700;
   text-decoration: none;
-}
-
-.servico-card {
-  transition: transform 0.2s ease;
 }
 
 .servico-card:hover {
