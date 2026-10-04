@@ -1,0 +1,274 @@
+.hero {
+  background-color: #01326f;
+  color: white;
+  padding: 70px 0;
+}
+
+.hero-subtitulo {
+  color: #eae164;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero-titulo {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0.95;
+  margin-bottom: 25px;
+}
+
+.hero-texto {
+  max-width: 500px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-orcamento {
+  background-color: #eae164;
+  color: #01326f;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.btn-catalogo {
+  color: white;
+  padding: 12px 25px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.hero-ilustracao {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-grafismo {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin-right: -40px;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-titulo {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .hero-subtitulo {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-texto {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .hero-botoes {
+    flex-wrap: wrap;
+  }
+
+  .hero-ilustracao {
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .hero-grafismo {
+    max-width: 300px;
+    margin-right: 0;
+  }
+}
+.numeros {
+  background-color: #eab2bb;
+  padding: 25px 0;
+}
+
+.numero-item {
+  color: #01326f;
+}
+
+.numero-item strong {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.numero-item span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.servicos {
+  background-color: #fffcf6;
+  padding: 70px 0;
+}
+
+.servicos-cabecalho {
+  margin-bottom: 40px;
+}
+
+.servicos-subtitulo {
+  color: #ea9da9;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.servicos-titulo {
+  color: #01326f;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.servico-card {
+  background-color: white;
+  border: 1px solid rgba(234, 178, 187, 0.35);
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.servico-icone {
+  display: block;
+  color: #ea9da9;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.servico-card h3 {
+  color: #01326f;
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.servico-card p {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.servico-card a {
+  color: #ea9da9;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+}
+
+.cta {
+  background-color: #eae164;
+  padding: 55px 0;
+}
+
+.cta-titulo {
+  color: #01326f;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.cta-texto {
+  color: #1b548d;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.cta-botao {
+  display: inline-block;
+
+  background-color: #01326f;
+  color: white;
+
+  padding: 12px 28px;
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.cta-botao:hover {
+  background-color: #1b548d;
+  color: white;
+}
+
+.depoimentos {
+  background-color: #fffcf6;
+  padding: 65px 0;
+}
+
+.depoimentos-titulo {
+  color: #01326f;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+
+.depoimento-card {
+  background-color: rgba(234, 178, 187, 0.15);
+  border: 1px solid rgba(234, 178, 187, 0.25);
+  border-radius: 12px;
+
+  padding: 25px;
+
+  height: 100%;
+}
+
+.depoimento-card p {
+  color: #666;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.depoimento-card strong {
+  color: #01326f;
+  font-size: 0.75rem;
+}
+
+.estrelas {
+  color: #eae164;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}

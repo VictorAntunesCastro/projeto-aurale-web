@@ -102,3 +102,21 @@ a {
   min-height: 300px;
   border: 0;
 }
+
+/* barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--aurale-creme);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--aurale-rosa-claro);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--aurale-rosa);
+}
