@@ -12,14 +12,13 @@
 body {
   font-family: "Nunito", sans-serif;
   color: var(--texto);
-  background: #f6f7fa;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", serif;
 }
 
-/* ---------- HEADER ----------*/
+/* ---------- HEADER ---------- */
 #header {
   position: sticky;
   top: 0;
@@ -98,7 +97,7 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 0 0 0.2rem rgba(27, 84, 141, 0.15);
 }
 
-/* chips (checkbox estilizado) */
+/* checkbox estilizado */
 .chip-input {
   position: absolute;
   opacity: 0;
@@ -128,6 +127,24 @@ h1, h2, h3, h4, h5 {
   outline: 3px solid var(--rosa-forte);
   outline-offset: 2px;
 }
+
+.chip-preco {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--rosa-forte);
+  margin-top: 0.15rem;
+}
+.chip-input:checked + .chip .chip-preco { color: var(--amarelo); }
+
+/* quantidade: só aparece quando o item está marcado */
+.chip-qtd {
+  display: none;
+  margin-top: 0.4rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+}
+.chip-input:checked ~ .chip-qtd { display: block; }
 
 /* simulação de valor */
 .estimativa {
@@ -186,39 +203,6 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
 }
 .btn-limpar:hover { color: var(--rosa-forte); }
-
-/* ---------- FOOTER ---------- */
-.aurale-footer {
-  background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul) 100%);
-  color: rgba(255, 255, 255, 0.85);
-  padding: 3.5rem 0 1.5rem;
-  font-size: 0.85rem;
-}
-.footer-logo {
-  color: var(--rosa);
-  font-weight: 900;
-  letter-spacing: 0.06em;
-}
-.aurale-footer h5 {
-  color: var(--rosa);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-family: "Nunito", sans-serif;
-  font-weight: 800;
-}
-.aurale-footer a {
-  color: rgba(255, 255, 255, 0.85);
-  text-decoration: none;
-}
-.aurale-footer a:hover { color: var(--amarelo); }
-.aurale-footer li { margin-bottom: 0.4rem; }
-.footer-copy {
-  text-align: center;
-  font-size: 0.72rem;
-  margin: 2rem 0 0;
-  opacity: 0.6;
-}
 
 @media (max-width: 575.98px) {
   .form-card { padding: 1.5rem; }
