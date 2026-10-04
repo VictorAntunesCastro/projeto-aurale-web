@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/orcamento.css" />
   </head>
   <body>
@@ -79,63 +80,88 @@
         <p class="form-hint">Selecione os itens que deseja locar</p>
         <div class="row g-2 chips-grid">
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="salao" />
-            <label for="salao" class="chip">Salão de festas</label>
+            <input type="checkbox" class="chip-input" id="salao" data-preco="1500" />
+            <label for="salao" class="chip">Salão de festas<span class="chip-preco">R$ 1.500</span></label>
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="piscina" />
-            <label for="piscina" class="chip">Piscina de bolinhas</label>
+            <input type="checkbox" class="chip-input" id="mesa-redonda" data-preco="80" />
+            <label for="mesa-redonda" class="chip">Mesa Redonda<span class="chip-preco">R$ 80</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-mesa-redonda" aria-label="Quantidade de Mesa Redonda" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="toboga" />
-            <label for="toboga" class="chip">Tobogã inflável</label>
+            <input type="checkbox" class="chip-input" id="mesa-retangular" data-preco="90" />
+            <label for="mesa-retangular" class="chip">Mesa Retangular<span class="chip-preco">R$ 90</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-mesa-retangular" aria-label="Quantidade de Mesa Retangular" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="gira-gira" />
-            <label for="gira-gira" class="chip">Gira-gira</label>
+            <input type="checkbox" class="chip-input" id="mesa-bolo" data-preco="70" />
+            <label for="mesa-bolo" class="chip">Mesa de Bolo<span class="chip-preco">R$ 70</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-mesa-bolo" aria-label="Quantidade de Mesa de Bolo" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="painel" />
-            <label for="painel" class="chip">Painel floral</label>
+            <input type="checkbox" class="chip-input" id="cadeira-tiffany" data-preco="15" />
+            <label for="cadeira-tiffany" class="chip">Cadeira Tiffany<span class="chip-preco">R$ 15</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-cadeira-tiffany" aria-label="Quantidade de Cadeira Tiffany" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="arco" />
-            <label for="arco" class="chip">Arco de balões</label>
+            <input type="checkbox" class="chip-input" id="cadeira-plastico" data-preco="8" />
+            <label for="cadeira-plastico" class="chip">Cadeira de Plástico<span class="chip-preco">R$ 8</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-cadeira-plastico" aria-label="Quantidade de Cadeira de Plástico" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="som" />
-            <label for="som" class="chip">Caixa de som</label>
+            <input type="checkbox" class="chip-input" id="cadeira-decorativa" data-preco="20" />
+            <label for="cadeira-decorativa" class="chip">Cadeira Decorativa<span class="chip-preco">R$ 20</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-cadeira-decorativa" aria-label="Quantidade de Cadeira Decorativa" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="iluminacao" />
-            <label for="iluminacao" class="chip">Iluminação cênica</label>
+            <input type="checkbox" class="chip-input" id="arco-baloes" data-preco="120" />
+            <label for="arco-baloes" class="chip">Arco de Balões<span class="chip-preco">R$ 120</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-arco-baloes" aria-label="Quantidade de Arco de Balões" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="mesas-cadeiras" />
-            <label for="mesas-cadeiras" class="chip">Mesas e cadeiras</label>
+            <input type="checkbox" class="chip-input" id="painel-decorativo" data-preco="150" />
+            <label for="painel-decorativo" class="chip">Painel Decorativo<span class="chip-preco">R$ 150</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-painel-decorativo" aria-label="Quantidade de Painel Decorativo" />
           </div>
           <div class="col-6 col-md-4">
-            <input type="checkbox" class="chip-input" id="loucas" />
-            <label for="loucas" class="chip">Louças e utensílios</label>
+            <input type="checkbox" class="chip-input" id="mesa-decorada" data-preco="180" />
+            <label for="mesa-decorada" class="chip">Mesa Decorada<span class="chip-preco">R$ 180</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-mesa-decorada" aria-label="Quantidade de Mesa Decorada" />
+          </div>
+          <div class="col-6 col-md-4">
+            <input type="checkbox" class="chip-input" id="piscina-bolinhas" data-preco="50" />
+            <label for="piscina-bolinhas" class="chip">Piscina de Bolinhas<span class="chip-preco">R$ 50</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-piscina-bolinhas" aria-label="Quantidade de Piscina de Bolinhas" />
+          </div>
+          <div class="col-6 col-md-4">
+            <input type="checkbox" class="chip-input" id="cama-elastica" data-preco="150" />
+            <label for="cama-elastica" class="chip">Cama Elástica<span class="chip-preco">R$ 150</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-cama-elastica" aria-label="Quantidade de Cama Elástica" />
+          </div>
+          <div class="col-6 col-md-4">
+            <input type="checkbox" class="chip-input" id="basquete-eletronico" data-preco="150" />
+            <label for="basquete-eletronico" class="chip">Basquete Eletrônico<span class="chip-preco">R$ 150</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-basquete-eletronico" aria-label="Quantidade de Basquete Eletrônico" />
+          </div>
+          <div class="col-6 col-md-4">
+            <input type="checkbox" class="chip-input" id="aero-hockey" data-preco="150" />
+            <label for="aero-hockey" class="chip">Aero Hockey<span class="chip-preco">R$ 150</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-aero-hockey" aria-label="Quantidade de Aero Hockey" />
+          </div>
+          <div class="col-6 col-md-4">
+            <input type="checkbox" class="chip-input" id="toto" data-preco="100" />
+            <label for="toto" class="chip">Totó<span class="chip-preco">R$ 100</span></label>
+            <input type="number" min="1" value="1" class="form-control chip-qtd" id="qtd-toto" aria-label="Quantidade de Totó" />
           </div>
         </div>
 
         <!-- SIMULAÇÃO DE VALOR -->
         <div class="estimativa mt-4">
           <p class="estimativa-titulo">Simulação de valor</p>
-          <p class="form-hint mb-3">
-            Salão de Festas: R$ 1.500 · Mesa: R$ 50 · Cadeira: R$ 10
+          <p class="form-hint mb-0">
+            Marque os itens acima e ajuste a quantidade. Os valores seguem o
+            catálogo.
           </p>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label for="qtd-mesas" class="form-label">Quantidade de mesas</label>
-              <input type="number" min="0" class="form-control" id="qtd-mesas" />
-            </div>
-            <div class="col-md-6">
-              <label for="qtd-cadeiras" class="form-label">Quantidade de cadeiras</label>
-              <input type="number" min="0" class="form-control" id="qtd-cadeiras" />
-            </div>
-          </div>
           <div class="estimativa-rodape">
             <button class="btn btn-aurale-outline" type="button" id="btn-calcular">
               Calcular orçamento
@@ -164,43 +190,15 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="aurale-footer">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5">
-            <h4 class="footer-logo">AURALE</h4>
-            <p>
-              Locação de festas, brinquedos e salão para tornar seus momentos
-              inesquecíveis.
-            </p>
-          </div>
-          <div class="col-6 col-lg-3">
-            <h5>Páginas</h5>
-            <ul class="list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="salao.html">Salão de Festas</a></li>
-              <li><a href="catalogo.html">Catálogo</a></li>
-              <li><a href="orcamento.html">Orçamento</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-4">
-            <h5>Contato</h5>
-            <ul class="list-unstyled">
-              <li>Rua das Festas, 123 — São Paulo, SP</li>
-              <li>(11) 99999-0000</li>
-              <li>contato@aurale.com.br</li>
-              <li>Instagram · WhatsApp</li>
-            </ul>
-          </div>
-        </div>
-        <p class="footer-copy">© 2026 Aurale. Todos os direitos reservados.</p>
-      </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/Header.js"></script>
-    <script>criarHeader();</script>
+    <script src="js/Footer.js"></script>
+    <script>
+      criarHeader();
+      criarFooter();
+    </script>
     <script src="js/orcamento.js"></script>
   </body>
 </html>
