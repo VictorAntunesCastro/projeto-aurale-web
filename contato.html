@@ -15,51 +15,14 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-aurale">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">AURALE</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menuPrincipal"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Início</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-              >
-                Produtos e Espaços
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="salao.html">Salão de Festas</a></li>
-                <li><a class="dropdown-item" href="catalogo.html">Catálogo</a></li>
-                <li><a class="dropdown-item" href="orcamento.html">Simular Orçamento</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contato.html">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="header"></div>
 
-    <header class="contato-hero">
+    <div class="contato-hero">
       <div class="container">
         <h1>Fale com a Aurale</h1>
         <p class="mb-0">Tire suas dúvidas, peça um orçamento ou venha conhecer nosso espaço.</p>
       </div>
-    </header>
+    </div>
 
     <main class="container my-5">
       <div class="row g-5">
@@ -229,5 +192,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/contato.js"></script>
+    <script src="js/Header.js"></script>
+    <script>criarHeader();</script>
   </body>
 </html>
