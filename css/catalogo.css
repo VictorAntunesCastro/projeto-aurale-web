@@ -1,0 +1,332 @@
+/* =========================
+   CATÁLOGO - AURALE
+   ========================= */
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f6f7fa;
+    color: #1c2b44;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Playfair Display", serif;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero-catalogo {
+    background: linear-gradient(
+        135deg,
+        var(--aurale-azul-escuro) 0%,
+        var(--aurale-azul) 100%
+    );
+
+    color: #fff;
+    padding: 4.5rem 0;
+}
+
+.hero-label {
+    color: var(--aurale-amarelo);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero-catalogo h1 {
+    font-weight: 800;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.hero-sub {
+    max-width: 520px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* =========================
+   CONTEÚDO
+   ========================= */
+
+.catalogo-container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+
+/* =========================
+   CATEGORIAS
+   ========================= */
+
+.categorias {
+    margin-bottom: 4rem;
+}
+
+.categoria-btn {
+    border: 2px solid var(--aurale-azul-escuro);
+    color: var(--aurale-azul-escuro);
+    background-color: transparent;
+
+    border-radius: 50rem;
+
+    padding: 0.6rem 1.5rem;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.categoria-btn:hover {
+    background-color: var(--aurale-azul-escuro);
+    border-color: var(--aurale-azul-escuro);
+    color: #fff;
+}
+
+
+/* =========================
+   SEÇÕES
+   ========================= */
+
+.catalogo-secao {
+    margin-bottom: 5rem;
+    scroll-margin-top: 100px;
+}
+
+.secao-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.secao-titulo p {
+    color: var(--aurale-rosa);
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    margin-bottom: 0.25rem;
+}
+
+.secao-titulo h2 {
+    color: var(--aurale-azul-escuro);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.produto-card {
+    border: none;
+
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    background-color: #fff;
+
+    box-shadow: 0 5px 20px rgba(1, 50, 111, 0.10);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(1, 50, 111, 0.16);
+}
+
+
+/* =========================
+   IMAGENS
+   ========================= */
+
+.produto-img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    background-color: #f1f1f1;
+}
+
+
+/* =========================
+   CONTEÚDO DOS CARDS
+   ========================= */
+
+.produto-card .card-body {
+    padding: 1.5rem;
+}
+
+.produto-titulo {
+    color: var(--aurale-azul-escuro);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    margin-bottom: 0.75rem;
+}
+
+.produto-descricao {
+    color: #6b7488;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    margin-bottom: 1rem;
+}
+
+.produto-preco {
+    color: var(--aurale-azul-escuro);
+
+    font-size: 1.15rem;
+    font-weight: 800;
+
+    margin-bottom: 1.2rem;
+}
+
+
+/* =========================
+   BOTÃO DOS PRODUTOS
+   ========================= */
+
+.produto-btn {
+    background-color: var(--aurale-azul-escuro);
+    color: #fff;
+
+    border: 2px solid var(--aurale-azul-escuro);
+
+    border-radius: 50rem;
+
+    padding: 0.65rem 1rem;
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    transition: 0.2s;
+}
+
+.produto-btn:hover {
+    background-color: var(--aurale-azul);
+    border-color: var(--aurale-azul);
+    color: #fff;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.aurale-footer {
+    background: linear-gradient(
+        135deg,
+        var(--aurale-azul-escuro) 0%,
+        var(--aurale-azul) 100%
+    );
+
+    color: rgba(255, 255, 255, 0.85);
+
+    padding: 3.5rem 0 1.5rem;
+
+    font-size: 0.85rem;
+}
+
+.footer-logo {
+    color: var(--aurale-rosa-claro);
+
+    font-weight: 900;
+
+    letter-spacing: 0.06em;
+}
+
+.aurale-footer h5 {
+    color: var(--aurale-rosa-claro);
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+}
+
+.aurale-footer a {
+    color: rgba(255, 255, 255, 0.85);
+
+    text-decoration: none;
+}
+
+.aurale-footer a:hover {
+    color: var(--aurale-amarelo);
+}
+
+.aurale-footer li {
+    margin-bottom: 0.4rem;
+}
+
+.footer-copy {
+    text-align: center;
+
+    font-size: 0.72rem;
+
+    margin: 2rem 0 0;
+
+    opacity: 0.6;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 767.98px) {
+
+    .hero-catalogo {
+        padding: 3.5rem 1rem;
+    }
+
+    .catalogo-container {
+        padding-top: 2rem;
+    }
+
+    .categorias {
+        margin-bottom: 3rem;
+    }
+
+    .categoria-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .catalogo-secao {
+        margin-bottom: 4rem;
+    }
+
+    .secao-titulo h2 {
+        font-size: 1.8rem;
+    }
+
+}
