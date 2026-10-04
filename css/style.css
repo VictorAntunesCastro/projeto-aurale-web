@@ -56,18 +56,6 @@ a {
   color: var(--aurale-rosa-claro);
 }
 
-/* footer */
-.footer-aurale {
-  background-color: var(--aurale-azul-escuro);
-  color: var(--aurale-creme);
-  padding: 2rem 0;
-  margin-top: 3rem;
-}
-
-.footer-aurale a {
-  color: var(--aurale-rosa-claro);
-}
-
 /* botoes padrao do site */
 .btn-aurale {
   background-color: var(--aurale-azul);
