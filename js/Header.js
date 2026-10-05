@@ -14,7 +14,6 @@ function criarHeader(containerId = 'header') {
         { href: 'catalogo.html', label: 'Catálogo de Itens' },
       ],
     },
-    { href: 'orcamento.html', label: 'Orçamento' },
     { href: 'contato.html', label: 'Contato' },
   ];
 
